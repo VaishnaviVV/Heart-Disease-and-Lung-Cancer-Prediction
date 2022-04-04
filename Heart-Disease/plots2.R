@@ -41,7 +41,7 @@ fig
 
 fig <- plot_ly(data2,
                  type='histogram',
-                 x=~data2$ï..age,color=~sex)
+                 x=~data2$Ã¯..age,color=~sex)
 fig <- fig %>% layout(
   barmode="stack",bargap=0.1)
 fig
@@ -71,7 +71,7 @@ fig <- plot_ly(df5,x=~restecg, y=~n,color = ~target,type="bar")
 fig
 # Analysis of Trestbps by age
 
-ggplot(data2, aes(x = data$ï..age, y = trestbps, color = target, shape = target))+
+ggplot(data2, aes(x = data$Ã¯..age, y = trestbps, color = target, shape = target))+
   geom_point()+
   geom_smooth(se = FALSE)
 
